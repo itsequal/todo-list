@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "prueba de backend",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "dotenvx run -- nodemon ./src/index.js",
+    "start": "dotenvx run -- node ./src/index.js",
+    "database:seeder": "dotenvx run -- node ./src/database/seeder/seeder.js",
+    "database:test": "dotenvx run -- node ./src/database/database.js"
+  },
+  "author": "oskarrolon",
+  "license": "ISC",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.45.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mariadb": "^3.4.4"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "nodemon": "^3.1.10"
+  }
+}
